@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ember & Ash — A modern restaurant and café offering handcrafted dishes, artisan coffee, and unforgettable dining experiences. Reserve your table today." />
+  <meta name="keywords" content="restaurant, café, fine dining, reservations, artisan coffee, handcrafted food, table booking" />
+  <meta name="author" content="Ember & Ash Restaurant" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://emberandash.com/" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Ember & Ash — Restaurant & Café" />
+  <meta property="og:description" content="Handcrafted dishes, artisan coffee, and unforgettable dining. Reserve your table at Ember & Ash." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://emberandash.com/" />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1200" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ember & Ash — Restaurant & Café" />
+  <meta name="twitter:description" content="Handcrafted dishes, artisan coffee, and unforgettable dining." />
+
+  <!-- Schema.org Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Ember & Ash",
+    "description": "A modern restaurant and café offering handcrafted dishes, artisan coffee, and unforgettable dining experiences.",
+    "url": "https://emberandash.com",
+    "servesCuisine": ["Contemporary", "Mediterranean", "Café"],
+    "priceRange": "$$",
+    "openingHours": "Mo-Su 08:00-23:00",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "12 Harbor View Street",
+      "addressLocality": "Rawalpindi",
+      "addressCountry": "PK"
+    },
+    "telephone": "+92-300-1234567",
+    "hasMenu": "https://emberandash.com/#menu"
+  }
+  </script>
+
+  <title>Ember & Ash — Restaurant & Café</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ======= NAVBAR ======= -->
+  <header class="navbar" id="navbar" role="banner">
+    <div class="nav-container">
+      <a href="#home" class="logo" aria-label="Ember and Ash Home">
+        <span class="logo-icon">✦</span>
+        <span>Ember <em>&</em> Ash</span>
+      </a>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reserve">Reserve</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ======= HERO ======= -->
+    <section class="hero" id="home" aria-label="Hero section">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="hero-tag">Est. 2018 · Rawalpindi</p>
+        <h1 class="hero-title">Where Every Meal<br /><em>Tells a Story</em></h1>
+        <p class="hero-subtitle">Handcrafted dishes, artisan coffee, and evenings worth remembering.</p>
+        <div class="hero-btns">
+          <a href="#menu" class="btn btn-primary">Explore Menu</a>
+          <a href="#reserve" class="btn btn-outline">Reserve a Table</a>
+        </div>
+      </div>
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+    </section>
+
+    <!-- ======= INTRO STRIP ======= -->
+    <section class="intro-strip" aria-label="Restaurant highlights">
+      <div class="strip-item">
+        <span class="strip-icon" aria-hidden="true">☕</span>
+        <p>Artisan Coffee</p>
+      </div>
+      <div class="strip-item">
+        <span class="strip-icon" aria-hidden="true">🍽</span>
+        <p>Farm to Table</p>
+      </div>
+      <div class="strip-item">
+        <span class="strip-icon" aria-hidden="true">🕯</span>
+        <p>Ambient Dining</p>
+      </div>
+      <div class="strip-item">
+        <span class="strip-icon" aria-hidden="true">⭐</span>
+        <p>5-Star Experience</p>
+      </div>
+    </section>
+
+    <!-- ======= ABOUT ======= -->
+    <section class="about section" id="about" aria-label="About us">
+      <div class="container about-grid">
+        <div class="about-img-wrap">
+          <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&q=80" alt="Interior of Ember and Ash restaurant with warm lighting and elegant table settings" loading="lazy" />
+          <div class="about-badge" aria-hidden="true">
+            <span class="badge-num">7+</span>
+            <span class="badge-txt">Years of<br>Excellence</span>
+          </div>
+        </div>
+        <div class="about-text">
+          <p class="section-tag">Our Story</p>
+          <h2 class="section-title">Crafted with Passion,<br />Served with Soul</h2>
+          <p>At Ember & Ash, we believe great food is an act of love. Every dish is prepared fresh using locally sourced ingredients, inspired by Mediterranean and contemporary flavors that warm the heart.</p>
+          <p>From morning brunch to candlelit dinners, our space is designed to make every visit feel like a special occasion.</p>
+          <a href="#reserve" class="btn btn-primary">Book a Table</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= MENU ======= -->
+    <section class="menu-section section" id="menu" aria-label="Our menu">
+      <div class="container">
+        <p class="section-tag center">What We Serve</p>
+        <h2 class="section-title center">Our Menu</h2>
+
+        <!-- Filter Buttons -->
+        <div class="filter-btns" role="tablist" aria-label="Menu categories">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true">All</button>
+          <button class="filter-btn" data-filter="breakfast" role="tab" aria-selected="false">Breakfast</button>
+          <button class="filter-btn" data-filter="mains" role="tab" aria-selected="false">Main Course</button>
+          <button class="filter-btn" data-filter="drinks" role="tab" aria-selected="false">Drinks</button>
+          <button class="filter-btn" data-filter="desserts" role="tab" aria-selected="false">Desserts</button>
+        </div>
+
+        <!-- Menu Grid -->
+        <div class="menu-grid" id="menuGrid" role="list">
+
+          <article class="menu-card" data-category="breakfast" role="listitem">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1533089860892-a7c6f0a88666?w=400&q=80" alt="Avocado toast with poached eggs on sourdough bread" loading="lazy" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-top">
+                <h3>Avocado Toast</h3>
+                <span class="price">Rs. 850</span>
+              </div>
+              <p>Sourdough, smashed avocado, poached eggs, chilli flakes, micro herbs.</p>
+              <span class="menu-tag">Breakfast</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="breakfast" role="listitem">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1567620905732-2d1ec7ab7445?w=400&q=80" alt="Fluffy pancakes with berry compote and maple syrup" loading="lazy" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-top">
+                <h3>Berry Pancakes</h3>
+                <span class="price">Rs. 750</span>
+              </div>
+              <p>Fluffy buttermilk pancakes, mixed berry compote, mascarpone, maple syrup.</p>
+              <span class="menu-tag">Breakfast</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains" role="listitem">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=400&q=80" alt="Grilled salmon fillet with roasted vegetables and lemon butter sauce" loading="lazy" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-top">
+                <h3>Grilled Salmon</h3>
+                <span class="price">Rs. 2,200</span>
+              </div>
+              <p>Atlantic salmon, roasted seasonal vegetables, lemon butter sauce, capers.</p>
+              <span class="menu-tag">Main Course</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains" role="listitem">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1544025162-d76694265947?w=400&q=80" alt="Slow cooked beef short ribs with mashed potato" loading="lazy" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-top">
+                <h3>Braised Short Ribs</h3>
+                <span class="price">Rs. 2,800</span>
+              </div>
+              <p>12-hour slow-braised beef ribs, truffle mash, red wine jus, crispy shallots.</p>
+              <span class="menu-tag">Main Course</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="mains" role="listitem">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=400&q=80" alt="Fresh garden salad with grilled chicken and tahini dressing" loading="lazy" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-top">
+                <h3>Harvest Bowl</h3>
+                <span class="price">Rs. 1,400</span>
+              </div>
+              <p>Grilled chicken, quinoa, roasted peppers, cucumber, tahini, pomegranate.</p>
+              <span class="menu-tag">Main Course</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="drinks" role="listitem">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=400&q=80" alt="Artisan flat white coffee in a ceramic cup" loading="lazy" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-top">
+                <h3>Flat White</h3>
+                <span class="price">Rs. 450</span>
+              </div>
+              <p>Double ristretto, velvety steamed milk, perfect microfoam, hand-poured art.</p>
+              <span class="menu-tag">Drinks</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="drinks" role="listitem">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1544145945-f90425340c7e?w=400&q=80" alt="Refreshing rose lemonade in a tall glass with mint" loading="lazy" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-top">
+                <h3>Rose Lemonade</h3>
+                <span class="price">Rs. 380</span>
+              </div>
+              <p>Fresh-squeezed lemon, rose syrup, soda, dried rose petals, fresh mint.</p>
+              <span class="menu-tag">Drinks</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="desserts" role="listitem">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?w=400&q=80" alt="Warm chocolate lava cake with vanilla ice cream" loading="lazy" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-top">
+                <h3>Chocolate Lava Cake</h3>
+                <span class="price">Rs. 650</span>
+              </div>
+              <p>Warm dark chocolate fondant, molten centre, vanilla bean ice cream, cocoa dust.</p>
+              <span class="menu-tag">Desserts</span>
+            </div>
+          </article>
+
+          <article class="menu-card" data-category="desserts" role="listitem">
+            <div class="menu-img">
+              <img src="https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?w=400&q=80" alt="Classic tiramisu with espresso and mascarpone" loading="lazy" />
+            </div>
+            <div class="menu-info">
+              <div class="menu-top">
+                <h3>Tiramisu</h3>
+                <span class="price">Rs. 580</span>
+              </div>
+              <p>Espresso-soaked ladyfingers, mascarpone cream, dark cocoa, amaretto touch.</p>
+              <span class="menu-tag">Desserts</span>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= GALLERY ======= -->
+    <section class="gallery-section section" id="gallery" aria-label="Photo gallery">
+      <div class="container">
+        <p class="section-tag center">Visual Feast</p>
+        <h2 class="section-title center">Our Gallery</h2>
+        <div class="gallery-grid" id="galleryGrid">
+
+          <figure class="gallery-item" tabindex="0" aria-label="Open image: Warm ambiance of Ember and Ash dining room">
+            <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=600&q=80" alt="Warm ambiance of Ember and Ash dining room with candlelit tables" loading="lazy" />
+            <figcaption class="gallery-overlay"><span>Dining Room</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" tabindex="0" aria-label="Open image: Barista crafting latte art">
+            <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600&q=80" alt="Barista carefully crafting latte art in a ceramic cup" loading="lazy" />
+            <figcaption class="gallery-overlay"><span>Artisan Coffee</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" tabindex="0" aria-label="Open image: Beautifully plated main course dish">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80" alt="Beautifully plated main course dish with artistic presentation" loading="lazy" />
+            <figcaption class="gallery-overlay"><span>Plated Perfection</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" tabindex="0" aria-label="Open image: Outdoor terrace seating at sunset">
+            <img src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80" alt="Outdoor terrace seating with warm sunset lighting" loading="lazy" />
+            <figcaption class="gallery-overlay"><span>Terrace Dining</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" tabindex="0" aria-label="Open image: Fresh pastries and bread from the bakery">
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=600&q=80" alt="Fresh artisan pastries and bread displayed in the bakery counter" loading="lazy" />
+            <figcaption class="gallery-overlay"><span>Fresh Bakery</span></figcaption>
+          </figure>
+
+          <figure class="gallery-item" tabindex="0" aria-label="Open image: Dessert platter with seasonal fruits">
+            <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?w=600&q=80" alt="Elegant dessert platter with seasonal fruits and chocolate" loading="lazy" />
+            <figcaption class="gallery-overlay"><span>Sweet Endings</span></figcaption>
+          </figure>
+
+        </div>
+      </div>
+
+      <!-- Lightbox -->
+      <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close image viewer">&times;</button>
+        <button class="lightbox-prev" id="lightboxPrev" aria-label="Previous image">&#8249;</button>
+        <button class="lightbox-next" id="lightboxNext" aria-label="Next image">&#8250;</button>
+        <div class="lightbox-img-wrap">
+          <img src="" alt="" id="lightboxImg" />
+          <p class="lightbox-caption" id="lightboxCaption"></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= RESERVATION ======= -->
+    <section class="reserve-section section" id="reserve" aria-label="Table reservation">
+      <div class="container reserve-grid">
+        <div class="reserve-info">
+          <p class="section-tag">Book a Table</p>
+          <h2 class="section-title">Reserve Your<br /><em>Perfect Evening</em></h2>
+          <p>Fill in the form and your reservation request will be sent directly to us via WhatsApp. We confirm within 30 minutes.</p>
+          <ul class="reserve-details" aria-label="Restaurant details">
+            <li><span aria-hidden="true">🕗</span> Mon – Sun: 8:00 AM – 11:00 PM</li>
+            <li><span aria-hidden="true">📍</span> 12 Harbor View Street, Rawalpindi</li>
+            <li><span aria-hidden="true">📞</span> +92 324 0161184</li>
+          </ul>
+        </div>
+
+        <div class="reserve-form-wrap">
+          <form id="reservationForm" novalidate aria-label="Reservation form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guestName">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="guestName" name="guestName" placeholder="Your full name" required autocomplete="name" />
+                <span class="error-msg" id="nameError" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="guestPhone">Phone Number <span aria-hidden="true">*</span></label>
+                <input type="tel" id="guestPhone" name="guestPhone" placeholder="+92 300 0000000" required autocomplete="tel" />
+                <span class="error-msg" id="phoneError" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="resDate">Date <span aria-hidden="true">*</span></label>
+                <input type="date" id="resDate" name="resDate" required />
+                <span class="error-msg" id="dateError" role="alert"></span>
+              </div>
+              <div class="form-group">
+                <label for="resTime">Time <span aria-hidden="true">*</span></label>
+                <select id="resTime" name="resTime" required>
+  <option value="">Select Time</option>
+  <option value="08:00 AM">08:00 AM</option>
+  <option value="09:00 AM">09:00 AM</option>
+  <option value="10:00 AM">10:00 AM</option>
+  <option value="11:00 AM">11:00 AM</option>
+  <option value="12:00 PM">12:00 PM</option>
+  <option value="01:00 PM">01:00 PM</option>
+  <option value="02:00 PM">02:00 PM</option>
+  <option value="03:00 PM">03:00 PM</option>
+  <option value="04:00 PM">04:00 PM</option>
+  <option value="05:00 PM">05:00 PM</option>
+  <option value="06:00 PM">06:00 PM</option>
+  <option value="07:00 PM">07:00 PM</option>
+  <option value="08:00 PM">08:00 PM</option>
+  <option value="09:00 PM">09:00 PM</option>
+  <option value="10:00 PM">10:00 PM</option>
+  <option value="11:00 PM">11:00 PM</option>
+</select>
+                <span class="error-msg" id="timeError" role="alert"></span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="guests">Number of Guests <span aria-hidden="true">*</span></label>
+              <select id="guests" name="guests" required>
+                <option value="">Select guests</option>
+                <option value="1">1 Person</option>
+                <option value="2">2 People</option>
+                <option value="3">3 People</option>
+                <option value="4">4 People</option>
+                <option value="5">5 People</option>
+                <option value="6">6 People</option>
+                <option value="7-10">7 – 10 People</option>
+                <option value="10+">10+ People (Private Dining)</option>
+              </select>
+              <span class="error-msg" id="guestsError" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label for="specialReq">Special Requests <span class="optional">(optional)</span></label>
+              <textarea id="specialReq" name="specialReq" rows="3" placeholder="Dietary requirements, birthday, anniversary, seating preference..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+              <span>Send Reservation via WhatsApp</span>
+              <span class="btn-icon" aria-hidden="true">📱</span>
+            </button>
+            <p class="form-note">You'll be redirected to WhatsApp to confirm your booking.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= FOOTER ======= -->
+  <footer class="footer" id="contact" role="contentinfo">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="logo" aria-label="Ember and Ash Home">
+          <span class="logo-icon">✦</span>
+          <span>Ember <em>&</em> Ash</span>
+        </a>
+        <p>A place where good food meets good company. Come hungry, leave happy.</p>
+      </div>
+      <nav class="footer-links" aria-label="Footer navigation">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#reserve">Reservation</a></li>
+        </ul>
+      </nav>
+      <div class="footer-hours">
+        <h3>Opening Hours</h3>
+        <p>Monday – Friday<br /><strong>8:00 AM – 11:00 PM</strong></p>
+        <p>Saturday – Sunday<br /><strong>9:00 AM – 12:00 AM</strong></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Ember &amp; Ash. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- jQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+</body>
+</html>
