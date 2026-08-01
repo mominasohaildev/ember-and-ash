@@ -6,6 +6,38 @@
 $(document).ready(function () {
 
   /* ============================================
+     0-A. AOS — Animate On Scroll Init
+     ============================================ */
+  AOS.init({
+    duration: 800,       // animation duration ms
+    easing:   'ease-out-cubic',
+    once:     true,      // animate only once per element
+    offset:   80,        // trigger 80px before element enters viewport
+  });
+
+
+  /* ============================================
+     0-B. DARK / LIGHT MODE TOGGLE
+     ============================================ */
+  const $themeToggle = $('#themeToggle');
+  const THEME_KEY    = 'ea_theme';
+
+  // Apply saved preference on load
+  if (localStorage.getItem(THEME_KEY) === 'light') {
+    $('body').addClass('light-mode');
+  }
+
+  $themeToggle.on('click', function () {
+    $('body').toggleClass('light-mode');
+    const isLight = $('body').hasClass('light-mode');
+    localStorage.setItem(THEME_KEY, isLight ? 'light' : 'dark');
+
+    // Reinit AOS after theme switch (colours may shift)
+    AOS.refresh();
+  });
+
+
+  /* ============================================
      1. NAVBAR — scroll effect + hamburger
      ============================================ */
   const $navbar = $('#navbar');
@@ -281,6 +313,20 @@ $(document).ready(function () {
 
     if (!isValid) return;
 
+    /* ------ RESERVATION LIMIT: max 3 per phone number ------ */
+    const RES_KEY      = 'ea_reservations';
+    const MAX_RES      = 3;
+    const allRes       = JSON.parse(localStorage.getItem(RES_KEY) || '{}');
+    const phoneClean   = phone.replace(/\s/g, '');           // strip spaces for consistent key
+    const prevCount    = allRes[phoneClean] || 0;
+
+    if (prevCount >= MAX_RES) {
+      showError('guestPhone', 'phoneError',
+        'This number has already made ' + MAX_RES + ' reservations. Please call us directly.');
+      return;
+    }
+    /* ------------------------------------------------------- */
+
     // Format time to 12-hour
     /*function formatTime(t) {
       const [h, m] = t.split(':').map(Number);
@@ -315,6 +361,10 @@ $(document).ready(function () {
     const encodedMsg = encodeURIComponent(message);
     const whatsappURL = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodedMsg;
     window.open(whatsappURL, '_blank');
+
+    // Save reservation count for this phone number
+    allRes[phoneClean] = prevCount + 1;
+    localStorage.setItem(RES_KEY, JSON.stringify(allRes));
 
     // Hide form and show Thank You message
     const $form = $('#reservationForm');
@@ -381,3 +431,20 @@ $(document).ready(function () {
   });
 
 }); // end document ready
+
+  /* ============================================
+     8. SCROLL TO TOP BUTTON
+     ============================================ */
+  const $scrollTop = $('#scrollTop');
+
+  $(window).on('scroll.scrolltop', function () {
+    if ($(this).scrollTop() > 400) {
+      $scrollTop.addClass('visible');
+    } else {
+      $scrollTop.removeClass('visible');
+    }
+  });
+
+  $scrollTop.on('click', function () {
+    $('html, body').animate({ scrollTop: 0 }, 600, 'swing');
+  });

@@ -50,6 +50,8 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
+  <!-- AOS — Animate On Scroll -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -70,6 +72,24 @@
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
+      <!-- Dark / Light Mode Toggle -->
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle theme">
+        <span class="theme-icon theme-icon--moon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+        </span>
+        <span class="theme-icon theme-icon--sun" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="5"/>
+            <line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+            <line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+          </svg>
+        </span>
+      </button>
+
       <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu" aria-expanded="false">
         <span></span><span></span><span></span>
       </button>
@@ -98,19 +118,19 @@
 
     <!-- ======= INTRO STRIP ======= -->
     <section class="intro-strip" aria-label="Restaurant highlights">
-      <div class="strip-item">
+      <div class="strip-item" data-aos="fade-up" data-aos-delay="0">
         <span class="strip-icon" aria-hidden="true">☕</span>
         <p>Artisan Coffee</p>
       </div>
-      <div class="strip-item">
+      <div class="strip-item" data-aos="fade-up" data-aos-delay="100">
         <span class="strip-icon" aria-hidden="true">🍽</span>
         <p>Farm to Table</p>
       </div>
-      <div class="strip-item">
+      <div class="strip-item" data-aos="fade-up" data-aos-delay="200">
         <span class="strip-icon" aria-hidden="true">🕯</span>
         <p>Ambient Dining</p>
       </div>
-      <div class="strip-item">
+      <div class="strip-item" data-aos="fade-up" data-aos-delay="300">
         <span class="strip-icon" aria-hidden="true">⭐</span>
         <p>5-Star Experience</p>
       </div>
@@ -118,7 +138,7 @@
 
     <!-- ======= ABOUT ======= -->
     <section class="about section" id="about" aria-label="About us">
-      <div class="container about-grid">
+      <div class="container about-grid" data-aos="fade-up" data-aos-duration="900">
         <div class="about-img-wrap">
           <img src="https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=700&q=80" alt="Interior of Ember and Ash restaurant with warm lighting and elegant table settings" loading="lazy" />
           <div class="about-badge" aria-hidden="true">
@@ -139,8 +159,8 @@
     <!-- ======= MENU ======= -->
     <section class="menu-section section" id="menu" aria-label="Our menu">
       <div class="container">
-        <p class="section-tag center">What We Serve</p>
-        <h2 class="section-title center">Our Menu</h2>
+        <p class="section-tag center" data-aos="fade-up">What We Serve</p>
+        <h2 class="section-title center" data-aos="fade-up" data-aos-delay="100">Our Menu</h2>
 
         <!-- Filter Buttons -->
         <div class="filter-btns" role="tablist" aria-label="Menu categories">
@@ -338,7 +358,7 @@
 
     <!-- ======= RESERVATION ======= -->
     <section class="reserve-section section" id="reserve" aria-label="Table reservation">
-      <div class="container reserve-grid">
+      <div class="container reserve-grid" data-aos="fade-up" data-aos-duration="900">
         <div class="reserve-info">
           <p class="section-tag">Book a Table</p>
           <h2 class="section-title">Reserve Your<br /><em>Perfect Evening</em></h2>
@@ -455,8 +475,17 @@
     </div>
   </footer>
 
+  <!-- Scroll To Top Button -->
+  <button class="scroll-top" id="scrollTop" aria-label="Scroll to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <polyline points="18 15 12 9 6 15"/>
+    </svg>
+  </button>
+
   <!-- jQuery CDN -->
   <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <!-- AOS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
